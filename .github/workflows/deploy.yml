@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+
+env:
+  NAME: kosa
+  USERNAME: kosa
       
 jobs: 
   My-Deploy-Job: 
