@@ -8,6 +8,7 @@ on:
 env:
   NAME: kosa
   USERNAME: kosa
+  USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
       
 jobs: 
   My-Deploy-Job: 
@@ -36,3 +37,8 @@ jobs:
       
       - name: 환경변수 USERNAME 출력
         run: echo "USERNAME = ${{ env.USERNAME }}"
+      
+      - name: 시크릿 USER_PASSWORD 출력
+        run: | 
+          echo "USER_PASSWORD = ${{ env.USER_PASSWORD }}"
+          echo "USER_PASSWORD = ${{ secrets.USER_PASSWORD }}"
