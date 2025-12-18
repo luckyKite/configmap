@@ -28,7 +28,7 @@ jobs:
         run: env
         
       - name: 환경변수 NAME 출력
-        run: echo${{ env.NAME }}
+        run: echo ${{ env.NAME }}
       
       - name: 환경변수 USERNAME 출력
         run: echo "USERNAME = ${{ env.USERNAME }}"
